@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-dark">
+    <div class="container form-group card col-9 mt-3 pb-3">
+        <form class="card-body">
+            <label for="groceryItem">To Buy</label>
+            <input id="toBuy" type="text" placeholder="Item" class="form-control">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" placeholder="Quantity" class="form-control">
+        </form>
+        <button id="add" class="btn btn-primary">Add to Shopping List</button>
+    </div>
+    
+    <div class="container table-responsive">
+        <table id="shopping-list" class="table text-light">
+            <tr>
+              <th>Items</th>
+              <th>Quantity</th>
+              <th>Checkbox</th>
+            </tr>
+        </table>
+      </div>
+      
+
+
+    <script src="script.js"></script>
+    <script src="node_modules//jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
