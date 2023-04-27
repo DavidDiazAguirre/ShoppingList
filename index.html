@@ -7,9 +7,9 @@
     <title>Shopping List</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body class="bg-dark">
-    <div class="container form-group card col-9 mt-3 pb-3">
-        <form class="card-body">
+<body class="bg-dark"> <!--class set to bg-dark on the body tag makes the entire page dark mode (best mode)-->
+    <div class="container form-group card col-9 mt-3 pb-3"> <!--made this a container to center the form, made it a card,defined column size and the margin and padding-->
+        <form class="card-body"> <!--form contains a text field and a number field for user to enter item and amount to add to shopping list-->
             <label for="groceryItem">To Buy</label>
             <input id="toBuy" type="text" placeholder="Item" class="form-control">
             <label for="quantity">Quantity</label>
@@ -18,7 +18,7 @@
         <button id="add" class="btn btn-primary">Add to Shopping List</button>
     </div>
     
-    <div class="container table-responsive">
+    <div class="container table-responsive"> <!--table contains three headers, text appears light to contrast with bg-->
         <table id="shopping-list" class="table text-light">
             <tr>
               <th>Items</th>
